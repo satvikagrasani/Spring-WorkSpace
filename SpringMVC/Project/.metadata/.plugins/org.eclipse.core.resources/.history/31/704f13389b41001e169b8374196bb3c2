@@ -1,0 +1,28 @@
+package in.mindcraft;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class GetController {
+
+	@RequestMapping("/get")
+	public String get() {
+		System.out.println("Get");
+		return "get.jsp";
+	}
+	
+	@RequestMapping("/update")
+	public String update() {
+		System.out.println("Update");
+		return "update.jsp";
+	}
+	
+	@RequestMapping("/delete")
+	public String delete() {
+		System.out.println("Delete");
+		return "delete.jsp";
+	}
+	
+	
+}

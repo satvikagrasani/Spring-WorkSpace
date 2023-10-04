@@ -1,0 +1,21 @@
+	
+18/08/23
+	Spring Framework
+		Spring Core
+		Spring AOP (Aspect Oriented Programming
+		Spring JDBC
+		Spring JPA (Java Persistance API) //Persistance- returning the state of the object
+		Spring Boot 
+		
+	Spring Core
+		Dependency Injection  
+			XML Based Configuration 
+			Annotation Based Configuration (Widely used)
+	
+	Scope of the Bean in Spring
+		Singleton (default scope)
+		Prototype	
+		
+	Spring MVC
+		Web Applications
+		

@@ -1,0 +1,40 @@
+21/08/2023
+Servlet
+	A servlet is a Java programming language class 
+	that is used to extend the capabilities of servers 
+	that host applications accessed by means of a request-response programming model
+
+2 methords to call one servlet form another servlet
+	1. Using RequestDispatcher
+			User dosnt know request is redirected
+			It is used in within the same domain
+			The Url dosnt change
+	2. Using sendRedirect
+			Session Management
+				a. using URL Rewriting
+						//response.sendRedirect("sq?c="+c);
+				b. using HttpSession object
+						//from sender				
+						HttpSession session= request.getSession();
+						session.setAttribute("c",c);
+						response.sendRedirect("sq");
+						//to receiver
+						HttpSession session = request.getSession();
+						int c = (int)session.getAttribute("c");
+				c. using cookies
+						//from sender
+						Cookie cookie = new Cookie("c",c+"");
+						response.addCookie(cookie);
+						response.sendRedirect("sq");
+						//to receiver
+						int c = 0;
+						Cookie [] cookies = request.getCookies();
+						for(Cookie ck:cookies) {
+							if(ck.getName().equals("c"))
+							{
+								c= Integer.parseInt(ck.getValue());
+							}
+						}
+M => Model(Data)
+V => View (Jsp)
+C => Controller (Servlet)		

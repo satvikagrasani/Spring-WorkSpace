@@ -1,0 +1,18 @@
+package in.mindcraft;
+
+public class Product {
+	
+	private int pid;
+	private String make;
+	private double cost;
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

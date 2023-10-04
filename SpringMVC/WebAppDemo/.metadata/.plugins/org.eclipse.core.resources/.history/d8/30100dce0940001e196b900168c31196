@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="add">
+		Enter Laptop ID: <input type="number" name="ID" placeholder="Enter Laptop ID"/><br>
+		Enter Laptop Make: <input type="text" name="Make" placeholder="Enter Laptop Make"/><br>
+		Enter Laptop Cost: <input type="number" name="Cost" placeholder="Enter Laptop Cost"/><br>
+		<input type="submit" value="Add Laptop"/>
+		<input type="button" value="Show Laptop" onclick=""/>
+	</form>
+</body>
+</html>

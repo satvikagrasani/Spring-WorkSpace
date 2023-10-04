@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>window.location.reload();</script>
+	
+	<form>
+		<h1>Laptop Form</h1>
+		Enter Laptop ID: <input type="number" name="ID" placeholder="Enter Laptop ID" /><br><br>
+		Enter Laptop Make: <input type="text" name="Make" placeholder="Enter Laptop Make"/><br><br>
+		Enter Laptop Cost: <input type="number" name="Cost" placeholder="Enter Laptop Cost"/><br><br>
+		<button type="submit" typeonclick="window.location.href = 'add'">Add Laptop</button>
+		
+		<input type="button" value="Show Laptop"/>
+	</form>
+</body>
+</html>

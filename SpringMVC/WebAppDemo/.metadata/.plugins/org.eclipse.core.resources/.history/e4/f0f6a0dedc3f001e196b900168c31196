@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+	<h2> Form</h2>
+	<form>
+		<label>Enter first number:</label>
+		<input type="text" placeholder="first"/><br>
+		<label>Enter Second number:</label>
+		<input type="text" placeholder="second"/><br>
+		<input type="submit" value="Submit"/>
+	</form>
+	
+</body>
+</html>

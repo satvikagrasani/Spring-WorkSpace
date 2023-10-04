@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="org.hibernate.Query,org.hibernate.Session"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%	
+		Query dquery = session.createQuery("from addlaptopservlet");
+		@SuppressWarnings("unchecked") 
+		List<MobilePhone> dlist = dquery.list();
+		for(MobilePhone md:dlist)
+			System.out.println(" "+ md.getMid()+"\t"+md.getMake()+"\t"+md.getCost());
+	%>
+</body>
+</html>

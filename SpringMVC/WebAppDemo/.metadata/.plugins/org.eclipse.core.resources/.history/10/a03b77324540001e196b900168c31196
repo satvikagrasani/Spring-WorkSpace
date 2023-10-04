@@ -1,0 +1,21 @@
+<%@page import="in.mindcraft.AddLaptopServlet,org.hibernate.Query,org.hibernate.Session,java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%	
+		int Id = (int)session.getAttribute("Id");
+		String Make = (String)session.getAttribute("Make");
+		int Cost = (int)session.getAttribute("Cost");
+		out.println("Entry<br>");
+		out.println("Laptop Id: "+Id+"Laptop Make: "+Make+"Laptop Cost: "+Cost+"<br>");
+		out.println("Inserted Data Successfully<br>");
+	%>
+	<input type="button" value="Add New" onclick="history.back()">
+</body>
+</html>

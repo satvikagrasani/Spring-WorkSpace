@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<form>
+	Enter Email:<input type="email" name="email" placeholder="Enter Email here" autofocus/>
+	Enter Name:<input type="text" name="name" placeholder="Enter Name herer"/>
+	
+	<input type="submit" value="Add Record" formaction="add"/>
+	<input type="submit" value="Show Record" formaction="show"/>
+	<input type="submit" value="Add Record" formaction="update"/>
+	<input type="submit" value="Add Record" formaction="delete"/>
+	
+	</form>
+	
+</body>
+</html>
